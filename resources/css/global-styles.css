@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/a4e72f/00000000000000003b9b3032/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/a4e72f/00000000000000003b9b3032/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/a4e72f/00000000000000003b9b3032/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/cfd60a/00000000000000003b9b3034/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/cfd60a/00000000000000003b9b3034/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/cfd60a/00000000000000003b9b3034/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/f4a012/00000000000000003b9b3036/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/f4a012/00000000000000003b9b3036/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/f4a012/00000000000000003b9b3036/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "proxima-soft";
+  src: url("https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+/* Global fixes */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0em;
+}
+
+body * {
+  line-height: 150%;
+  font-family: "proxima-soft", sans-serif;
+}
+
+body h1 {
+  font-weight: 700;
+}
+
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: 600;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+body p:not(.exclusion) {
+  margin: 1.625em 0px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* Titles */
+.title__404 {
+  font-size: 2.5em;
+}
+
+/* Links */
+.link__404 {
+}
+
+body:not(.home) .container a {
+  text-decoration: underline !important;
+}
+
+/* Disabled Cursor */
+.forbidden {
+  cursor: not-allowed;
+}
+
+@media (min-width: 60.5em) {
+  .content__part {
+    max-width: calc(50em - 2.5em);
+    /*padding: 1.125em 5em;*/
+  }
+}
+
+@media (min-width: 100em) {
+  .content__part {
+    margin: 0 auto !important;
+  }
+}
+
+/* Tailwinds Decorations */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px !important;
+  }
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--MatteBlack);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--LightSilver);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

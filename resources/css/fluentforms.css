@@ -1,0 +1,63 @@
+:where(.staxio__input) input,
+textarea {
+  padding: var(--p3) !important;
+  border-radius: var(--rounded-lg) !important;
+  max-width: calc(100% - 20px);
+  box-shadow: 0 10px 15px -3px #c6d9f7, 0 4px 6px -4px #c6d9f7;
+  background-color: rgb(248, 250, 252) !important;
+  border: none !important;
+}
+
+.staxio__image img {
+  margin: 0em auto;
+}
+
+.ff-btn-submit {
+  background-color: rgb(28 25 23) !important;
+  border-radius: var(--rounded-lg) !important;
+  padding: var(--p3) !important;
+  min-width: 200px;
+  color: var(--text-white) !important;
+  box-shadow: 0 10px 15px -3px #c6d9f7, 0 4px 6px -4px #c6d9f7;
+}
+
+.fluentform .ff_btn_style:focus,
+.fluentform .ff_btn_style:hover {
+  background-color: var(--ButtonHover) !important;
+}
+
+.fluentform .ff_btn_style:focus,
+.fluentform .ff_btn_style:active {
+  background-color: var(--ButtonActive) !important;
+}
+
+.ff-custom_html p a,
+.ff-btn-submit {
+  min-height: 50px;
+  max-height: 50px;
+}
+
+/* Success Modals */
+.ff-message-success,
+.ff_form_not_render {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-black);
+  background-color: rgb(134 239 172) !important;
+  border-radius: var(--rounded-lg) !important;
+  min-width: 200px;
+  filter: var(--drop-shadow-2xl) !important;
+  color: rgb(17, 17, 17);
+  padding: var(--p2);
+}
+
+:where(.ff-message-success, .ff_form_not_render) svg {
+  font-size: 20px;
+}
+
+/* Custom classes */
+.active {
+  background-color: #131616 !important;
+  color: #f9f9f9 !important;
+}

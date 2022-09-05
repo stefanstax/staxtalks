@@ -1,0 +1,284 @@
+/* ! From global-styles.css */
+.mh-100 {
+  min-height: 6.25em;
+}
+
+.staxio__flex {
+  display: flex;
+}
+
+.staxio__wrap {
+  flex-wrap: wrap;
+}
+
+.staxio__column {
+  flex-direction: column;
+}
+
+.staxio__row {
+  flex-direction: row;
+}
+
+@media (max-width: 37.5em) {
+  .staxio__xs_column {
+    flex-direction: column;
+  }
+
+  .staxio__xs_flexfull {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+.staxio__jcenter {
+  justify-content: center;
+}
+
+.staxio__jstart {
+  justify-content: flex-start;
+}
+
+.staxio__jevenly {
+  justify-content: space-evenly;
+}
+
+.staxio__jend {
+  justify-content: flex-end;
+}
+
+.staxio__jstretch {
+  justify-content: stretch;
+}
+
+.staxio__acenter {
+  align-items: center;
+}
+
+.staxio__astart {
+  align-items: flex-start;
+}
+
+.staxio__aend {
+  align-items: flex-end;
+}
+
+.staxio__astretch {
+  align-items: stretch;
+}
+
+.staxio__05 {
+  /* flex: 0 0 50%; */
+}
+
+.staxio__02 {
+  /* flex: 0 0 10%; */
+  min-width: 3em;
+}
+
+/* Buttons */
+
+/* Realistic buttons */
+.pushable {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 0.25em;
+}
+.front {
+  padding: 0.625em 1.25em;
+  transform: translateY(-0.375em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front:not(.exclude__icon-move) i {
+  margin-right: 0.3em;
+}
+
+a.pushable {
+  margin: 1em;
+  max-width: calc(100% - 2em);
+}
+
+.pushable:active .front {
+  transform: translateY(0em);
+}
+
+.button i {
+  margin-right: 0.625em;
+}
+
+/* Red Buttons */
+.red__button-border {
+  background-color: var(--formula_red);
+}
+.red__button-border:hover {
+  background-color: var(--formula_red-hover);
+}
+
+/* Green Buttons */
+.green__button {
+  background-color: var(--formula_green);
+  color: var(--batman_omega);
+}
+.green__button:hover {
+  background-color: var(--formula_green-hover);
+}
+
+/* White Buttons */
+.brew__button {
+  background-color: var(--white_brew);
+}
+.brew__button:hover {
+  background-color: var(--white);
+}
+
+/* Dark Buttons */
+.omega__button {
+  background-color: var(--batman_omega);
+  color: var(--white);
+}
+.omega__button:hover {
+  background-color: var(--white);
+  color: var(--batman_omega);
+}
+
+/* Transitions */
+.transition__05 {
+  transition: var(--transition_quarter);
+}
+
+/* Containers */
+
+.content__container {
+}
+
+.content__part {
+  padding: 1.25em;
+  max-width: calc(100% - 2.5em);
+  margin: 1em auto;
+}
+
+.content__part .staxio__full {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*  Borders  */
+
+.bb__brew {
+  border-bottom: 0.375em solid var(--white_brew);
+}
+
+.bb__mint {
+  border-bottom: 0.375em solid var(--staxio_mint);
+}
+
+.color__brew {
+  color: var(--white_brew);
+}
+
+/* Border Radius */
+
+.radius__15 {
+  border-radius: 0.938em;
+}
+
+.radius__10 {
+  border-radius: 0.625em;
+}
+
+/* Margin spaces */
+.margin__10 {
+  margin: 0.625em;
+}
+
+/* Background Colors */
+
+.bg__brew {
+  background-color: var(--white_brew);
+  color: var(--batman_omega);
+}
+.bg__brew:hover {
+  background-color: var(--formula_green-hover);
+}
+
+/* Buttons */
+.button {
+  padding: 0.625em;
+  margin: 0.225em;
+  border-radius: 0.625em;
+  max-width: calc(100% - 1.7em) !important;
+  text-align: center;
+  /* box-shadow: 5px 5px 7px rgba(17, 17, 17, 0.35); */
+}
+
+/* Dark Buttons */
+.bg__white {
+  background-color: var(--white);
+  color: var(--batman_omega);
+}
+.bg__white:hover {
+  color: var(--white);
+  background-color: var(--batman_omega);
+}
+
+.bg__omega {
+  background-color: var(--batman_omega);
+  color: var(--white);
+}
+.bg__omega:hover {
+  color: var(--white);
+  background-color: var(--batman_omegaHover);
+}
+
+/* Wedding Buttons */
+.bg__wedding {
+  background-color: var(--staxio_wedding);
+  color: var(--batman_omega);
+}
+.bg__wedding:hover {
+  background-color: var(--staxio_wedding-hover);
+  color: var(--white);
+}
+
+/* Red Button */
+/* .bg__lemon {
+  background-color: var(--staxio_lemon);
+}
+.bg__lemon :hover {
+  background-color: var(--formula_red-hover);
+} */
+
+/* Mint Buttons */
+.bg__mint {
+  background-color: var(--staxio_mint);
+}
+.bg__mint:hover {
+  background-color: var(--staxio_mint_washed);
+}
+
+/* Green Buttons  */
+.bg__f1 {
+  background-color: var(--formula_green);
+}
+
+/* Global containers */
+
+.staxio__wfull {
+  width: 100%;
+}
+
+.staxio__w80 {
+  width: 80%;
+}
+
+.staxio__w50 {
+  width: 50%;
+}
+
+.staxio__hfull {
+  height: 100%;
+}
