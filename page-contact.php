@@ -17,6 +17,7 @@
         get_template_part("templates/pages/page-contact", "part");
         ?>
     </div>
+    <h1>Git connection test!</h1>
 
 </section>
 
