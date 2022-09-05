@@ -13,7 +13,7 @@ $contactUrl = "/contact/";
         parts that
         were
         totally <span class="border-solid border-b-2 pb-1 border-stone-400">made</span> <span class="border-solid border-b-2 pb-1 border-stone-400">up</span>.</h1>
-    <?php } else { ?> <h1 class="<?php echo $headingClasses; ?> mb-8"><?php the_title(); ?></h1>
+    <?php } else { ?> <h1 class="<?php echo $headingClasses; ?>"><?php the_title(); ?></h1>
     <?php } ?>
     <?php if (!is_page("website-release") && !is_page("privacy-policy") && !is_page("terms-and-conditions") && !is_page("contact")) { ?>
       <div class="flex gap-[20px] max-w-[600px] w-full md:w-6/12 flex-wrap justify-center items-center h-full">
