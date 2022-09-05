@@ -39,6 +39,7 @@
         .join("-")
         .replace("?", "")
         .replace(".", "")
+        .replace("<br>", " ")
         .replace("’", "")}">` +
       element +
       "</a></div>";

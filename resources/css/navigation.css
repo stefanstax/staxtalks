@@ -22,8 +22,8 @@
 
 /* Assign active class to currenctly visited page */
 .navigation__menu .active-page a {
-  background-color: var(--BabyBlue);
-  color: var(--MatteBlack);
+  background-color: var(--ButtonActive);
+  color: var(--OffWhite);
   border-radius: 0.375rem;
 }
 
