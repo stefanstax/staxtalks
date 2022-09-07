@@ -61,6 +61,5 @@ span.ff_upload_btn {
 
 /* Custom classes */
 .active {
-  background-color: #131616 !important;
-  color: #f9f9f9 !important;
+  background-color: var(--ButtonActive) !important;
 }
