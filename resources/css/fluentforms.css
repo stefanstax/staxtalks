@@ -1,11 +1,14 @@
 :where(.staxio__input) input,
-textarea {
+textarea,
+span.ff_upload {
   padding: var(--p3) !important;
   border-radius: var(--rounded-lg) !important;
   max-width: calc(100% - 20px);
   box-shadow: 0 10px 15px -3px #c6d9f7, 0 4px 6px -4px #c6d9f7;
   background-color: rgb(248, 250, 252) !important;
   border: none !important;
+  color: var(--InputPlaceholder);
+  font-size: 16px;
 }
 
 .staxio__image img {
