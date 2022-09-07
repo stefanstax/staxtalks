@@ -1,6 +1,6 @@
 :where(.staxio__input) input,
 textarea,
-span.ff_upload {
+span.ff_upload_btn {
   padding: var(--p3) !important;
   border-radius: var(--rounded-lg) !important;
   max-width: calc(100% - 20px);
