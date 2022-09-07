@@ -87,8 +87,8 @@
   transition: all 0.25s ease-in-out;
 }
 
-.header__nav ul li a:hover,
-.history-menu li a:hover {
+.header__nav ul li:not(.active-page) a:hover,
+.history-menu li:not(.active-page) a:hover {
   color: var(--BabyPink) !important;
   transition: all 0.25s ease-in-out;
 }
