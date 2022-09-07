@@ -87,10 +87,6 @@
   transition: all 0.25s ease-in-out;
 }
 
-.header__nav .active-page a:hover {
-  color: var(--MatteBlack) !important;
-}
-
 .header__nav ul li a:hover,
 .history-menu li a:hover {
   color: var(--BabyPink) !important;
