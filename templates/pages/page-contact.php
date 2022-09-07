@@ -1,4 +1,4 @@
-<?php include(__DIR__ . '/paletteSystem.php'); ?>
+<?php include(__DIR__ . '/../../paletteSystem.php'); ?>
 
 <?php the_content(); ?>
 
