@@ -1,5 +1,5 @@
 // Function to auto-generate table of contents on blog pages - Default to pick will be H2
-(function autoGenerateTableOfContents() {
+function autoGenerateTableOfContents() {
   // Define changable variables
   // ? Set a deafult value for table of content links
   let tableOfContentTracker = "h3";
@@ -20,9 +20,10 @@
       .trim()
       .split(/\s+/)
       .join("-")
-      .replace("?", "")
-      .replace(".", "")
-      .replace("’", "");
+      .replaceAll("?", "")
+      .replaceAll(".", "")
+      .replaceAll("<br>", " ")
+      .replaceAll("’", "");
     element.setAttribute("id", beautifiedLink);
     allHeadings.push(element.innerHTML);
 
@@ -31,42 +32,17 @@
 
   // Populate table of contents container with all h2 there are on the page and make their href tied to exisiting id of the same heading;
   allHeadings.forEach(element => {
+    let formattedElement = element.innerHTML.replaceAll("<br>", " ");
     container.innerHTML +=
       `<div class="tableOfContents__block"><span class="iconify mr-2" data-icon="codicon:inspect"></span> <a class="tableOfContents__link" href="#${element
         .toLowerCase()
         .trim()
         .split(/\s+/)
         .join("-")
-        .replace("?", "")
-        .replace(".", "")
-        .replace("<br>", " ")
-        .replace("’", "")}">` +
-      element +
+        .replaceAll("?", "")
+        .replaceAll(".", "")
+        .replaceAll("’", "")}">` +
+      formattedElement +
       "</a></div>";
   });
-})();
-
-(function triggerTableOfContents() {
-  let resizeWidth;
-  let container = document.querySelector(".tableOfContents");
-  let tocTrigger = document.querySelector(".tableOfContents__trigger");
-  let tocHeadings = document.querySelectorAll(".tableOfContents a");
-
-  if (browserWidth <= 600) {
-    resizeWidth = "inset-x-12";
-  } else if (browserWidth >= 601 && browserWidth <= 1441) {
-    resizeWidth = "left-[60%]";
-  } else {
-    resizeWidth = "inset-x-1/4";
-  }
-
-  tocTrigger.addEventListener("click", function () {
-    container.classList.toggle(resizeWidth);
-  });
-
-  tocHeadings.forEach(tocHeading => {
-    tocHeading.addEventListener("click", function () {
-      container.classList.remove(resizeWidth);
-    });
-  });
-})();
+}

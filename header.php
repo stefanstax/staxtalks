@@ -49,8 +49,13 @@
       --BabyPink: #FDB9C8;
       --SnowWhite: #ffffff;
       --BabyBlue: #ecf3fe;
+
+      /* Buttons Colors */
       --ButtonHover: #3457D5;
       --ButtonActive: #1F75FE;
+
+      /* Info Colors */
+      --InfoBox: #fcd34d;
 
       /* PSEUDO Colors */
       --InputPlaceholder: #4041428c;
