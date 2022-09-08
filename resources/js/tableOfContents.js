@@ -32,7 +32,6 @@
 
   // Populate table of contents container with all h2 there are on the page and make their href tied to exisiting id of the same heading;
   allHeadings.forEach(element => {
-    let formattedElement = element.innerHTML.replaceAll("<br>", " ");
     container.innerHTML +=
       `<div class="tableOfContents__block"><span class="iconify mr-2" data-icon="codicon:inspect"></span> <a class="tableOfContents__link" href="#${element
         .toLowerCase()
@@ -42,7 +41,7 @@
         .replaceAll("?", "")
         .replaceAll(".", "")
         .replaceAll("’", "")}">` +
-      formattedElement +
+      element +
       "</a></div>";
   });
 })();
