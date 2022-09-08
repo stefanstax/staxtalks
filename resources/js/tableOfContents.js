@@ -1,5 +1,5 @@
 // Function to auto-generate table of contents on blog pages - Default to pick will be H2
-function autoGenerateTableOfContents() {
+(function autoGenerateTableOfContents() {
   // Define changable variables
   // ? Set a deafult value for table of content links
   let tableOfContentTracker = "h3";
@@ -45,4 +45,4 @@ function autoGenerateTableOfContents() {
       formattedElement +
       "</a></div>";
   });
-}
+})();
