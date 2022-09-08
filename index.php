@@ -1,24 +1,36 @@
 <?php get_header(); ?>
 
-<?php if (is_page()) {
-  get_template_part("page", "part");
-} else if (is_single()) {
-  get_template_part("single", "part");
-} else { ?>
-<section class="content">
-  <div
-    class="content__part staxio__flex staxio__wrap staxio__column staxio__wrap staxio__jcenter staxio__astart mh-100">
-    <h1 class="title__404">We're currently working on the content for this page. Please check again in a couple of days.
-    </h1>
-    <div class="staxio__flex staxio__wrap">
-      <a class="button bg__omega" href="https://stefanstax.me/" onclick="window.history.go(-1); return false;"
-        class="link__404"><span class="">Go back to
-          previous page</span></a>
-      <a class="button bg__omega" href="https://stefanstax.me/" onclick="window.history.go(-1); return false;"
-        class="link__404"><span class="">Go to Home</span></a>
-    </div>
+<?php include(__DIR__ . '/paletteSystem.php'); ?>
+<?php get_header(); ?>
+
+<?php get_template_part("templates/sections/nav/navigation_showcase", "part"); ?>
+<section class="w-full lg:<?php echo $NavigationContentOffset; ?>">
+  <!-- ? Banner for the page -->
+  <div class="banner">
+    <?php if (is_page()) {
+      get_template_part("templates/sections/banners/pages", "part");
+    } else {
+      get_template_part("templates/sections/banners/single", "part");
+    } ?>
   </div>
+  <div class="container my-12 lg:my-24 px-4 mx-auto">
+    <!-- ? Show breadcrumbs depending on the page -->
+    <?php if (!is_page("website-release")) {
+      if (function_exists('rank_math_the_breadcrumbs')) {
+        rank_math_the_breadcrumbs();
+      }
+    }
+
+    // ? Content for the page
+    if (is_page()) {
+      get_template_part("templates/sections/content/pages", "part");
+    } else {
+      get_template_part("templates/sections/content/single", "part");
+    }
+    ?>
+
+  </div>
+
 </section>
-<?php } ?>
 
 <?php get_footer(); ?>
