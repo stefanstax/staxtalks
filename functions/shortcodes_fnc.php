@@ -10,15 +10,14 @@ function building_client_shortcode()
 
 add_shortcode('clients_grid', 'building_client_shortcode');
 
-// Shortcode to display posts in a grid
-// function building_post_shortcode()
-// {
-// 	ob_start();
-// 	get_template_part('templates/sections/tableofcontents', "part");
-// 	return ob_get_clean();
-// }
+function building_post_shortcode()
+{
+	ob_start();
+	get_template_part('templates/sections/tableofcontents', "part");
+	return ob_get_clean();
+}
 
-// add_shortcode('table_of_contents', 'building_post_shortcode');
+add_shortcode('table_of_contents', 'building_post_shortcode');
 
 // Shortcode to display clients in a grid
 function building_blog_shortcode()
