@@ -52,6 +52,9 @@
       --ButtonHover: #3457D5;
       --ButtonActive: #1F75FE;
 
+      /* PSEUDO Colors */
+      --InputPlaceholder: #4041428c;
+
       /* Transitions */
       --transition_quarter: all 0.25s ease-in-out;
 
