@@ -17,11 +17,10 @@
         );
 
         $loop = new WP_Query($args);
-
         ?>
-        <div class="flex gap-[20px] flex-wrap justify-start items-center">
+        <div class="flex gap-[20px] flex-wrap justify-center items-center">
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                <div class="flex flex-col items-center justify-between rounded-xl bg-[<?php echo $LightSilver; ?>] p-4 w-full md:max-w-[300px] min-h-[300px]">
+                <div class="flex flex-col items-center justify-between rounded-xl bg-[<?php echo $SnowWhite; ?>] shadow-lg shadow-[<?php echo $BabyBlueShadow; ?>] p-4 w-full md:max-w-[300px] min-h-[300px]">
                     <!-- Post Tags -->
                     <div class="w-full my-2 text-[<?php echo $MatteBlack; ?>] text-sm">
                         <div class="flex gap-[5px] font-black">

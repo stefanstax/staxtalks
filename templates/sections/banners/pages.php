@@ -14,7 +14,10 @@ $contactUrl = "/contact/";
       parts that
       were
       totally <span class="border-solid border-b-2 pb-1 border-stone-400">made</span> <span class="border-solid border-b-2 pb-1 border-stone-400">up</span>.</h1>
-  <?php } else { ?> <h1 class="<?php echo $headingClasses; ?>"><?php the_title(); ?></h1>
+  <?php } else if (is_tag()) { ?> <h1 class="<?php echo $headingClasses; ?>">Tags</h1>
+  <?php } else if (is_category()) { ?> <h1 class="<?php echo $headingClasses; ?>">Categories</h1>
+  <?php } else { ?>
+    <h1 class="<?php echo $headingClasses; ?>"><?php the_title(); ?></h1>
   <?php } ?>
   <!-- Show CTA buttons if it's not one of the pages mentioned below -->
   <?php if (!is_page("website-release") && !is_page("privacy-policy") && !is_page("terms-and-conditions") && !is_page("contact")) { ?>
