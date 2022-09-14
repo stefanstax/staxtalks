@@ -20,9 +20,10 @@
       .trim()
       .split(/\s+/)
       .join("-")
-      .replace("?", "")
-      .replace(".", "")
-      .replace("’", "");
+      .replaceAll("?", "")
+      .replaceAll(".", "")
+      .replaceAll("<br>", " ")
+      .replaceAll("’", "");
     element.setAttribute("id", beautifiedLink);
     allHeadings.push(element.innerHTML);
 
@@ -37,36 +38,10 @@
         .trim()
         .split(/\s+/)
         .join("-")
-        .replace("?", "")
-        .replace(".", "")
-        .replace("<br>", " ")
-        .replace("’", "")}">` +
+        .replaceAll("?", "")
+        .replaceAll(".", "")
+        .replaceAll("’", "")}">` +
       element +
       "</a></div>";
-  });
-})();
-
-(function triggerTableOfContents() {
-  let resizeWidth;
-  let container = document.querySelector(".tableOfContents");
-  let tocTrigger = document.querySelector(".tableOfContents__trigger");
-  let tocHeadings = document.querySelectorAll(".tableOfContents a");
-
-  if (browserWidth <= 600) {
-    resizeWidth = "inset-x-12";
-  } else if (browserWidth >= 601 && browserWidth <= 1441) {
-    resizeWidth = "left-[60%]";
-  } else {
-    resizeWidth = "inset-x-1/4";
-  }
-
-  tocTrigger.addEventListener("click", function () {
-    container.classList.toggle(resizeWidth);
-  });
-
-  tocHeadings.forEach(tocHeading => {
-    tocHeading.addEventListener("click", function () {
-      container.classList.remove(resizeWidth);
-    });
   });
 })();

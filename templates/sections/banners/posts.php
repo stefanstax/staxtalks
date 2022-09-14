@@ -8,7 +8,7 @@
       $terms = get_the_terms($post->ID, 'client_category');
     }
     the_post(); ?>
-    <div class="w-full h-full px-3 py-6 bg-[<?php echo $MatteBlack; ?>] text-[<?php echo $OffWhite; ?>] flex flex-col justify-between align-center drop-shadow-2xl">
+    <div class="w-full h-full px-3 py-6 bg-[<?php echo $MatteNavy; ?>] text-[<?php echo $OffWhite; ?>] flex flex-col justify-between align-center drop-shadow-2xl">
       <h1 class="max-w-2xl mx-auto py-4 pb-0 text-3xl"><?php the_title(); ?></h1>
       <p class="text-center max-w-2xl exclusion mx-auto mb-3 py-4 text-xl">
         <?php the_excerpt(); ?>

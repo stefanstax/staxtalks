@@ -4,11 +4,18 @@
 <html lang="en">
 
 <head>
+  <title><?php bloginfo('name'); ?></title>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta name="resource-type" content="document" />
+  <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
+  <meta http-equiv="content-language" content="en-us" />
+  <meta name="author" content="Stefan Stax" />
+  <meta name="contact" content="contact@staxtalks.com" />
+  <meta name="description" content="<?php bloginfo('description'); ?>" />
+  <meta name="keywords" content="mental health, programming, coding, programming blog, blog, anxiety, stress, coping, stress management, freelance, websites, pro-bono" />
   <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
-  <title><?php bloginfo('name'); ?></title>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,11 +30,6 @@
       --p2: 0.5em;
       --p3: 0.75em;
       --p4: 1em;
-
-      /* Paddings | Specific */
-      /* --padding-18: 1.125em;
-    --padding-0y: 0em;
-    --padding-5y: 0.3125em; */
 
       /* Border Radius */
       --rounded-md: 0.375em;
@@ -49,8 +51,13 @@
       --BabyPink: #FDB9C8;
       --SnowWhite: #ffffff;
       --BabyBlue: #ecf3fe;
+
+      /* Buttons Colors */
       --ButtonHover: #3457D5;
       --ButtonActive: #1F75FE;
+
+      /* Info Colors */
+      --InfoBox: #fcd34d;
 
       /* PSEUDO Colors */
       --InputPlaceholder: #4041428c;
