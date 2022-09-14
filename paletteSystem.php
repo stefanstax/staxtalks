@@ -1,5 +1,6 @@
 <?php
 $MatteBlack = "#131616";
+$MatteNavy = "#131618";
 $MatteBlackHover = "#303132";
 $MatteBlackClick = "#404142";
 $LightSilver = "#f5f5f7";
