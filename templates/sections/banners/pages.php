@@ -7,7 +7,7 @@ $contactUrl = "/contact/";
 
 
 <!-- Display a banner if it's a page or category template -->
-<div class="w-full h-full px-4 py-6 bg-[<?php echo $MatteBlack; ?>] text-[<?php echo $Silver; ?>] flex flex-col justify-between items-center drop-shadow-2xl">
+<div class="w-full h-full px-4 py-6 bg-[<?php echo $MatteNavy; ?>] text-[<?php echo $Silver; ?>] flex flex-col justify-between items-center drop-shadow-2xl">
   <!-- Specific Heading styles for home page  -->
   <?php if (is_front_page()) { ?>
     <h1 class="<?php echo $headingClasses; ?> mb-8">My story is <span class="border-solid border-b-2 pb-1 border-stone-400">!completely</span> true except the
