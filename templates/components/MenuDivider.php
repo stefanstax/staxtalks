@@ -1,0 +1,1 @@
+<div class="w-10/12 rounded-md mx-auto h-[2px] shadow-lg shadow-[<?php echo $BabyBlueShadow; ?>] bg-[#f9f9f9] my-4"></div>

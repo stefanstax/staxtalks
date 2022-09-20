@@ -70,5 +70,5 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="background-color: <?php echo $BabyBlue; ?>">
+<body <?php body_class(); ?> style="background-color: <?php echo $WashedBlue; ?>">
   <main class="w-full lg:mb-0 h-full flex flex-wrap">

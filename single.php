@@ -1,4 +1,6 @@
+<?php include(__DIR__ . '/componentPath.php'); ?>
 <?php include(__DIR__ . '/paletteSystem.php'); ?>
+
 <?php get_header(); ?>
 
 <?php get_template_part("templates/sections/nav/navigation_showcase", "part"); ?>
@@ -11,5 +13,7 @@
     <?php get_template_part("templates/sections/content/posts", "part"); ?>
   </div>
 </div>
-
+<!-- Cookie Policy -->
+<?php get_template_part($CookieCompliance, "part"); ?>
+<?php get_template_part($CookieSettings, "part"); ?>
 <?php get_footer(); ?>

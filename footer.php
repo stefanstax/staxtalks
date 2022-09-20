@@ -9,7 +9,7 @@
       <p>On this platform you will also find blogs, porftolio work as well as a <a href="https://staxtalks.com/anonymous-confessions/">confessions.</a></p>
     </div>
 
-    <div class="w-full lg:w-3/12 pb-12 lg:pb-0">
+    <div class="w-full lg:w-3/12 pb-24 lg:pb-0">
       <h4>Contact me via</h4>
       <div class="flex flex-col">
         <a href="https://instagram.com/staxtalks/" class="flex justify-start items-center gap-[10px] my-2">
