@@ -1,7 +1,7 @@
 <?php include(__DIR__ . '/paletteSystem.php'); ?>
 
 </main>
-<footer class="lg:ml-[15em] p-6 h-full text-white bg-[<?php echo $MatteBlack; ?>] site-footer">
+<footer class="lg:ml-[15em] p-6 h-full text-white bg-[<?php echo $MatteNavy; ?>] site-footer">
   <div class="w-full flex flex-wrap justify-center items-start gap-[40px]">
     <div class="w-full lg:w-3/12">
       <img class="max-w-[50px] border-solid border-b-2 border-[#E6EDEE] pb-2 mb-6" src="https://cdn.staxtalks.com/files/assets/2022/08/03182513/staxtalks-logo.png" alt="Stefan Stax Business Logo - Black colored outline logo - Illustrated logo representing an S">
