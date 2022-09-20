@@ -8,6 +8,7 @@ function global_styles()
 	wp_enqueue_style('navigation_css', get_template_directory_uri() . '/resources/css/navigation.css', array(), time());
 	wp_enqueue_style('banners_css', get_template_directory_uri() . '/resources/css/banners.css', array(), time());
 	wp_enqueue_style('fluentforms_css', get_template_directory_uri() . '/resources/css/fluentforms.css', array(), time());
+	wp_enqueue_style('cookies_css', get_template_directory_uri() . '/resources/css/cookies.css', array(), time());
 
 	if (function_exists("building_client_shortcode") or function_exists("building_blog_shortcode")) {
 		wp_enqueue_style('blog-layout', get_template_directory_uri() . '/resources/css/blog-layout.css', array(), time());
@@ -18,6 +19,7 @@ add_action('wp_enqueue_scripts', 'global_styles');
 function global_scripts()
 {
 	wp_enqueue_script('navigation_js', get_template_directory_uri() . '/resources/js/navigation.js', array(), time());
+	wp_enqueue_script('cookie_checker', get_template_directory_uri() . '/resources/js/cookieCompliance.js', array(), time());
 
 	// If current page is a blog post load table of contents function to populate 
 	if (is_single()) {

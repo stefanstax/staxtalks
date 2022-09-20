@@ -1,3 +1,4 @@
+<?php include(__DIR__ . '/componentPath.php'); ?>
 <?php include(__DIR__ . '/paletteSystem.php'); ?>
 <?php get_header(); ?>
 
@@ -17,6 +18,9 @@
     ?>
   </div>
 
+  <!-- Cookie Policy -->
+  <?php get_template_part($CookieCompliance, "part"); ?>
+  <?php get_template_part($CookieSettings, "part"); ?>
 </section>
 
 <?php get_footer(); ?>
