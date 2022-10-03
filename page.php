@@ -18,9 +18,7 @@
     ?>
   </div>
 
-  <!-- Cookie Policy -->
-  <?php get_template_part($CookieCompliance, "part"); ?>
-  <?php get_template_part($CookieSettings, "part"); ?>
+
 </section>
 
 <?php get_footer(); ?>

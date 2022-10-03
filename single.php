@@ -13,7 +13,5 @@
     <?php get_template_part("templates/sections/content/posts", "part"); ?>
   </div>
 </div>
-<!-- Cookie Policy -->
-<?php get_template_part($CookieCompliance, "part"); ?>
-<?php get_template_part($CookieSettings, "part"); ?>
+
 <?php get_footer(); ?>

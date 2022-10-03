@@ -9,15 +9,6 @@
   </div>
 
   <div class="overflow-y-auto h-[60vh]">
-    <p class="w-full py-2 px-4 exclusion text-center">Cookie Notice</p>
-    <div class="p-2">
-      <span id="cookieTrigger" class="flex items-center cursor-pointer bg-[<?php echo $MatteNavy; ?>] hover:bg-[<?php echo $ButtonHover; ?>] active:bg-[<?php echo $ButtonActive; ?>] <?php echo $roundedFull; ?> p-2 px-4">
-        <iconify-icon icon="akar-icons:miniplayer"></iconify-icon>
-        Cookie Policy
-      </span>
-    </div>
-    <?php get_template_part($MenuDivider, "part"); ?>
-
     <div class="primary__links-menu">
       <p class="w-full py-2 px-4 exclusion text-center">Pages</p>
 
