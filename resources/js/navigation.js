@@ -6,18 +6,19 @@ function reportWindowSize() {
 window.addEventListener("resize", reportWindowSize);
 
 (function triggerMenuVisibility() {
-  let menuIconAction = document.querySelector(".menu__trigger");
+  let navigationMobileBar = document.querySelector(".mobile__menu");
+  let menuIconAction = document.querySelector(".navigation__trigger");
   let menuIconCloser = document.querySelector(".closeMenuTrigger");
   let menuContainer = document.querySelector(".navigation__menu");
 
   menuIconAction.addEventListener("click", function () {
     menuContainer.classList.remove("hidden");
-    menuIconAction.classList.add("hidden");
+    navigationMobileBar.classList.add("hidden");
   });
 
   menuIconCloser.addEventListener("click", function () {
     menuContainer.classList.add("hidden");
-    menuIconAction.classList.remove("hidden");
+    navigationMobileBar.classList.remove("hidden");
   });
 })();
 

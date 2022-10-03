@@ -62,7 +62,7 @@ function advanced_redirection_stefanstax()
 		exit;
 	}
 }
-add_action('wp', 'advanced_redirection_stefanstax');
+// add_action('wp', 'advanced_redirection_stefanstax');
 
 // ? Current page URL
 function getPageURL()

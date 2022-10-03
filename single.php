@@ -1,4 +1,6 @@
+<?php include(__DIR__ . '/componentPath.php'); ?>
 <?php include(__DIR__ . '/paletteSystem.php'); ?>
+
 <?php get_header(); ?>
 
 <?php get_template_part("templates/sections/nav/navigation_showcase", "part"); ?>

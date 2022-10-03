@@ -1,11 +1,17 @@
+<?php include(__DIR__ . '../../../../componentPath.php'); ?>
+<?php include(__DIR__ . '../../../../paletteSystem.php'); ?>
+
 <header class="w-full max-w-[400px] justify-start flex-col items-center lg:items-stretch">
   <img class="max-w-[50px] mx-auto border-solid border-b-2 border-[#E6EDEE] pb-2 mb-6" src="https://cdn.staxtalks.com/files/assets/2022/08/03182513/staxtalks-logo.png" alt="Stefan Stax Business Logo - Black colored outline logo - Illustrated logo representing an S">
   <!-- Came to conclussion that menu shouldn't have an option to be disabled on large screen-->
   <div class="closeMenuTrigger mb-6 flex justify-center lg:hidden">
-    <iconify-icon inline icon="akar-icons:cross" width="18" height="18"></iconify-icon>
+    <iconify-icon inline icon="akar-icons:cross" width="1em" height="1em"></iconify-icon>
   </div>
+
   <div class="overflow-y-auto h-[60vh]">
     <div class="primary__links-menu">
+      <p class="w-full py-2 px-4 exclusion text-center">Pages</p>
+
       <?php
       wp_nav_menu(
         $nav = array(
@@ -30,9 +36,9 @@
       );
       ?>
     </div>
-    <div class="w-full h-[5px] bg-[#f9f9f9] my-4"></div>
     <div class="blog__posts-menu">
-      <p class="w-full py-2 px-4 exclusion">Blog Posts</p>
+      <?php get_template_part($MenuDivider, "part"); ?>
+      <p class="w-full py-2 px-4 exclusion text-center">Blog Posts</p>
       <?php
       wp_nav_menu(
         $nav = array(
@@ -57,7 +63,7 @@
       );
       ?>
     </div>
-    <div class="w-full h-[5px] bg-[#f9f9f9] my-4"></div>
+    <!-- <?php get_template_part($MenuDivider, "part"); ?> -->
     <!-- <div class="history-menu py-2 px-4">
       <p class="exclusion pb-4">Previously visited pages: </p>
       <ul id="historyPages" class="flex flex-wrap gap-[5px]">

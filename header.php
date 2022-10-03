@@ -17,6 +17,10 @@
   <meta name="keywords" content="mental health, programming, coding, programming blog, blog, anxiety, stress, coping, stress management, freelance, websites, pro-bono" />
   <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
 
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/046ebdc93337f4b40b9526fe/script.js"></script>
+  <!-- End cookieyes banner -->
+
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -70,5 +74,5 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="background-color: <?php echo $BabyBlue; ?>">
+<body <?php body_class(); ?> style="background-color: <?php echo $WashedBlue; ?>">
   <main class="w-full lg:mb-0 h-full flex flex-wrap">

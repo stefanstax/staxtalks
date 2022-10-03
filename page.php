@@ -1,3 +1,4 @@
+<?php include(__DIR__ . '/componentPath.php'); ?>
 <?php include(__DIR__ . '/paletteSystem.php'); ?>
 <?php get_header(); ?>
 
@@ -16,6 +17,7 @@
 
     ?>
   </div>
+
 
 </section>
 
