@@ -5,7 +5,7 @@
   <img class="max-w-[50px] mx-auto border-solid border-b-2 border-[#E6EDEE] pb-2 mb-6" src="https://cdn.staxtalks.com/files/assets/2022/08/03182513/staxtalks-logo.png" alt="Stefan Stax Business Logo - Black colored outline logo - Illustrated logo representing an S">
   <!-- Came to conclussion that menu shouldn't have an option to be disabled on large screen-->
   <div class="closeMenuTrigger mb-6 flex justify-center lg:hidden">
-    <iconify-icon inline icon="akar-icons:cross" width="1em" height="1em"></iconify-icon>
+    <iconify-icon inline icon="akar-icons:cross" width="1em" height="1em" style="margin: 0px"></iconify-icon>
   </div>
 
   <div class="overflow-y-auto h-[60vh]">

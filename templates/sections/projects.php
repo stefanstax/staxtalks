@@ -43,7 +43,7 @@ $projectName = $loop->post_title;
         <h3 class="text-large font-black"><?php the_title(); ?></h3>
         <!-- Post Excerpt -->
         <?php if (!empty(get_the_excerpt())) { ?>
-          <p class="text-base font-medium"><?php the_excerpt(); ?></p>
+          <p class="font-medium"><?php the_excerpt(); ?></p>
         <?php } ?>
       </div>
 

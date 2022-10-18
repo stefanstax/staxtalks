@@ -18,6 +18,11 @@ function staxio__responsive_images($image_id, $image_size, $max_width)
 	}
 }
 
+// add_image_size('mobile_thumbnail', 414, 896); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+// add_image_size('tablet_thumbnail', 768, 1024); // 220 pixels wide by 180 pixels tall, soft proportional crop mode
+
+
+
 
 
 // ? Assign class to active nav item
@@ -34,35 +39,16 @@ function special_nav_class($classes, $item)
 // ! Pre-release locked urls and public ones
 function advanced_redirection_stefanstax()
 {
-	$page_viewed = basename($_SERVER['REQUEST_URI']);
-	$openUrl = site_url("/website-release/");
-	$privacyPolicy = site_url("/privacy-policy/");
-	$termsAndConditions = site_url("/terms-and-conditions/");
-	$contact = site_url("/contact/");
-	$login = site_url("/login/");
-	$blockUrl = site_url("/wp-admin/");
+
 	$imageOptimisationUrl = site_url("/?imageOptimisation=lazyLoading");
 
-	if (!is_user_logged_in() && getPageURL() == $blockUrl) {
-		wp_safe_redirect($login);
-		exit;
-	}
-
-	if (!is_user_logged_in() && getPageURL() != $imageOptimisationUrl && getPageURL() != $privacyPolicy && getPageURL() != $openUrl && getPageUrl() != $login && getPageURL() != $termsAndConditions && getPageURL() != $contact) {
-		wp_safe_redirect($openUrl);
-		exit;
-	} else if (!is_user_logged_in() && $page_viewed == $privacyPolicy) {
-		wp_safe_redirect($privacyPolicy);
-		exit;
-	} else if (!is_user_logged_in() && $page_viewed == $termsAndConditions) {
-		wp_safe_redirect($termsAndConditions);
-		exit;
-	} else if (!is_user_logged_in() && $page_viewed == $contact) {
-		wp_safe_redirect($contact);
+	if (!is_user_logged_in() && getPageURL() == $imageOptimisationUrl) {
+		wp_safe_redirect($imageOptimisationUrl);
 		exit;
 	}
 }
-// add_action('wp', 'advanced_redirection_stefanstax');
+add_action('wp', 'advanced_redirection_stefanstax');
+
 
 // ? Current page URL
 function getPageURL()
