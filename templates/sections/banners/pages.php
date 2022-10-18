@@ -20,7 +20,7 @@ $contactUrl = "/contact/";
     <h1 class="<?php echo $headingClasses; ?>"><?php the_title(); ?></h1>
   <?php } ?>
   <!-- Show CTA buttons if it's not one of the pages mentioned below -->
-  <?php if (!is_page("website-release") && !is_page("privacy-policy") && !is_page("terms-and-conditions") && !is_page("contact")) { ?>
+  <?php if (!is_page("privacy-policy") && !is_page("terms-and-conditions") && !is_page("contact")) { ?>
     <div class="flex gap-[20px] max-w-[600px] w-full md:w-6/12 flex-wrap justify-center items-center h-full">
       <a href="https://instagram.com/staxtalks/" target="_blank" class="bg-[<?php echo $MatteBlack; ?>] hover:bg-[<?php echo $ButtonHover; ?>] active:bg-[<?php echo $ButtonActive; ?>] shadow-2xl shadow-[<?php echo $BabyBlueShadow; ?>] <?php echo $roundedFull; ?> p-2 text-center text-white w-full md:w-5/12">
         <span class="flex justify-center items-center">

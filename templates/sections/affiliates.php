@@ -14,7 +14,7 @@ $loop = new WP_Query($args);
             <!-- Post Content -->
             <div class="w-full flex flex-wrap items-stretch justify-stretch min-h-[270px]">
                 <h3 class="text-large font-black"><?php the_title(); ?></h3>
-                <p class="text-base font-medium"><?php echo the_excerpt(); ?></p>
+                <p class="font-medium"><?php echo the_excerpt(); ?></p>
 
                 <!-- Post CTA -->
                 <div class="w-full flex gap-[5px] justify-start items-center">

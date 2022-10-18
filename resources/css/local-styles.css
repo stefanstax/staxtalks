@@ -115,30 +115,32 @@
 /* ! Blog & Projects layout | END */
 
 /* Table of contents | start */
-.tableOfContents {
-
-  background-color: var(--yellow-300);
-}
 
 .tableOfContents ul {
   padding-left: 0em !important;
-}
-
-.tableOfContents .tableOfContents__block {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tableOfContents .tableOfContents__block {
+  border-radius: var(--rounded-md);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableOfContents .tableOfContents__block:hover {
+  color: var(--ButtonHover)!important;
+  transition: var(--transition_quarter);
 }
 
 .tableOfContents .tableOfContents__link {
   text-decoration: none;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 0.625em;
-  align-items: center;
-  text-transform: uppercase;
-  margin: 0.313em 0em;
-  color: var(--white);
+  font-size: 1em;
 }
 /* Table of contents | @media */
 

@@ -23,43 +23,27 @@ window.addEventListener("resize", reportWindowSize);
 })();
 
 (function blockNavigationTillRelease() {
-  let body = document.querySelector("body");
   let penIcon = `<iconify-icon icon="akar-icons:edit"></iconify-icon>`;
   let blogLinks = document.querySelectorAll("#menu-blogs-menu li a ");
-  // Pre-Release only
-  if (!body.classList.contains("admin-bar")) {
-    let navigationLinks = document.querySelectorAll("#menu-primary-menu li a");
+  // ! Locked paths removed due to website release
+  // let navigationLinks = document.querySelectorAll("#menu-primary-menu li a");
+  // navigationLinks.forEach((navigationLink) => {
+  //   navigationLink.classList.add("disabled");
 
-    // ! Old way - record for IG reel
-    // let aboutIcon = navigationLinks[1];
-    // let projectIcon = navigationLinks[2];
-    // let collaborationsIcon = navigationLinks[3];
-    // let confessionsIcon = navigationLinks[4];
+  //   if (
+  //     navigationLink.innerHTML.includes("Contact") ||
+  //     navigationLink.innerHTML.includes("Privacy") ||
+  //     navigationLink.innerHTML.includes("T&amp;C")
+  //   ) {
+  //     navigationLink.classList.remove("disabled");
+  //   }
+  // });
 
-    // aboutIcon.classList.add("disabled");
-    // projectIcon.classList.add("disabled");
-    // collaborationsIcon.classList.add("disabled");
-    // confessionsIcon.classList.add("disabled");
-
-    // ! New way - record for IG reel
-    navigationLinks.forEach(navigationLink => {
-      navigationLink.classList.add("disabled");
-
-      if (
-        navigationLink.innerHTML.includes("Contact") ||
-        navigationLink.innerHTML.includes("Privacy") ||
-        navigationLink.innerHTML.includes("T&amp;C")
-      ) {
-        navigationLink.classList.remove("disabled");
-      }
-    });
-
-    blogLinks.forEach(blog => {
-      blog.classList.add("disabled");
-    });
-  }
+  blogLinks.forEach((blog) => {
+    // blog.classList.add("disabled");
+  });
   // Past release
-  blogLinks.forEach(blog => {
+  blogLinks.forEach((blog) => {
     blog.insertAdjacentHTML("afterbegin", penIcon);
   });
 })();
@@ -67,7 +51,7 @@ window.addEventListener("resize", reportWindowSize);
 (function assignClassesToNavigationItems() {
   let navigationLinks = document.querySelectorAll(".navigation__menu a");
 
-  navigationLinks.forEach(navigationLink => {
+  navigationLinks.forEach((navigationLink) => {
     navigationLink.classList.add("p-2");
     navigationLink.classList.add("px-4");
   });

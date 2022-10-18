@@ -13,8 +13,21 @@
   let allHeadings = [];
   let beautifiedLink;
 
+  function headingLevelThreeDesign() {
+    let headingLevelThree = document.querySelectorAll(".has-large-font-size");
+
+    headingLevelThree.forEach((h3) => {
+      if (h3.children[0]) {
+        h3.classList.add("flex");
+        h3.classList.add("gap-[10px]");
+        h3.classList.add("items-center");
+        h3.classList.add("justify-start");
+      }
+    });
+  }
+
   // map all headings and assign id to each of them so they could be linked to the table of content elements
-  headings.forEach(element => {
+  headings.forEach((element) => {
     beautifiedLink = element.innerHTML
       .toLowerCase()
       .trim()
@@ -31,9 +44,9 @@
   });
 
   // Populate table of contents container with all h2 there are on the page and make their href tied to exisiting id of the same heading;
-  allHeadings.forEach(element => {
+  allHeadings.forEach((element) => {
     container.innerHTML +=
-      `<div class="tableOfContents__block"><span class="iconify mr-2" data-icon="codicon:inspect"></span> <a class="tableOfContents__link" href="#${element
+      `<div class="tableOfContents__block"><iconify-icon icon="akar-icons:triangle-right"></iconify-icon> <a class="tableOfContents__link" href="#${element
         .toLowerCase()
         .trim()
         .split(/\s+/)
@@ -43,5 +56,29 @@
         .replaceAll("’", "")}">` +
       element +
       "</a></div>";
+
+    // Cross already read sections
+    let createdHeadings = document.querySelectorAll(".tableOfContents__block");
+    createdHeadings.forEach((createdHeading) => {
+      createdHeading.addEventListener("click", function () {
+        headings.forEach((heading) => {
+          if (heading.innerHTML === createdHeading.children[1].innerHTML) {
+            heading.innerHTML += `<iconify-icon width="18px" height="18px" icon="akar-icons:thumbs-up"></iconify-icon>`;
+            createdHeading.classList.add("line-through");
+            createdHeading.classList.add("opacity-20");
+            headingLevelThreeDesign();
+          }
+        });
+      });
+    });
+  });
+})();
+
+(function toggleToc() {
+  let TOC = document.querySelector(".tableOfContents");
+  let tocTrigger = document.querySelector(".collapse__toc");
+
+  tocTrigger.addEventListener("click", function () {
+    TOC.classList.toggle("hidden");
   });
 })();

@@ -16,8 +16,9 @@
   <meta name="description" content="<?php bloginfo('description'); ?>" />
   <meta name="keywords" content="mental health, programming, coding, programming blog, blog, anxiety, stress, coping, stress management, freelance, websites, pro-bono" />
   <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
-
-  <!-- Start cookieyes banner -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap" rel="stylesheet">
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/046ebdc93337f4b40b9526fe/script.js"></script>
   <!-- End cookieyes banner -->
 
@@ -54,14 +55,18 @@
       --OffWhite: #f9f9f9;
       --BabyPink: #FDB9C8;
       --SnowWhite: #ffffff;
-      --BabyBlue: #ecf3fe;
+      --BabyBlue: #c6d9f7;
+      --WashedBlue: #F0F0F0;
 
       /* Buttons Colors */
       --ButtonHover: #3457D5;
       --ButtonActive: #1F75FE;
 
+      /* Rounded */
+      --rounded-md: 0.375em;
+
       /* Info Colors */
-      --InfoBox: #fcd34d;
+      --InfoBox: "#C5EFFD";
 
       /* PSEUDO Colors */
       --InputPlaceholder: #4041428c;
@@ -74,5 +79,5 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="background-color: <?php echo $WashedBlue; ?>">
+<body <?php body_class(); ?> style="background-color: <?php echo $BodyBlue; ?>">
   <main class="w-full lg:mb-0 h-full flex flex-wrap">

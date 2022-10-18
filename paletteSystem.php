@@ -8,19 +8,20 @@ $Silver = "#E6EDEE";
 $DarkSilver = "#7D8688";
 $OffWhite = "#f9f9f9";
 $SnowWhite = "#ffffff";
-$WashedBlue = "#ecf3fe";
+$BodyBlue = "#3b82f510";
 $BabyBlue = "#c6d9f7";
 $BabyPink = "#FDB9C8";
 
 // Buttons Colors 
 $ButtonHover = "#3457D5";
 $ButtonActive = "#1F75FE";
+$ButtonDisabled = "#3457d575";
 $Attention = "#facc15";
 $AttentionHover = "#eab308";
 $AttentionActive = "#a16207";
 
 // Guidance Colors
-$InfoBox = "#fcd34d";
+$InfoBox = "#C5EFFD";
 
 // Glass background - Add 1 - 9 x2 to enable glass
 $GlassWhite = "#f8fafc";
@@ -31,6 +32,11 @@ $GlassBlue = "#c6d9f7";
 $NavigationContentOffset = "ml-[15em]";
 $NavigationWidthLarge = "max-w-[15em]";
 $roundedFull = "rounded-md";
+
+// Content position depending on the Navigation
+$ContentNavDesktop = "ml-[20em]";
+$ContentNavTablet = "ml-[16.5em]";
+$ContentNavMobile = "mx-auto";
 
 
 // Shadow colors

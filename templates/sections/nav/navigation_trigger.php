@@ -2,15 +2,14 @@
 
 <div class="w-full z-10 fixed bottom-0 left-0 lg:hidden mobile__menu">
   <div class="flex min-h-[60px] px-4 justify-between items-center  bg-[<?php echo $MatteBlack; ?>] text-white exclude_icon-move">
-    <p class="min-w-[60px] flex flex-col justify-center items-center navigation__trigger">
+    <p class="exclusion min-w-[60px] flex flex-col justify-center items-center navigation__trigger">
       <iconify-icon inline icon="akar-icons:enlarge"></iconify-icon>
-      Menu
     </p>
     <?php
     wp_nav_menu(
       $nav = array(
         // 'menu'              => "", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
-        'menu_class'        => "flex flex-wrap gap-[20px] justify-between items-center p-2", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+        'menu_class'        => "flex flex-wrap gap-[10px] justify-end items-center p-2", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
         // 'menu_id'           => "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented.
         'container'         => "nav", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
         'container_class'   => "mobile_app_menu w-9/12 text-sm", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.

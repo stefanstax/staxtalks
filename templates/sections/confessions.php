@@ -13,7 +13,7 @@ $loop = new WP_Query($args);
         <div class="flex flex-col items-center justify-between rounded-2xl bg-[<?php echo $SnowWhite; ?>] shadow-lg shadow-[<?php echo $BabyBlueShadow; ?>] p-4 w-full md:max-w-[300px]">
             <!-- Post Content -->
             <div class="w-full">
-                <p class="text-base font-medium"><?php echo the_content(); ?></p>
+                <p class="font-medium"><?php echo the_content(); ?></p>
             </div>
         </div>
     <?php
