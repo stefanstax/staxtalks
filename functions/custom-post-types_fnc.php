@@ -55,6 +55,48 @@ function clients_init()
 }
 add_action('init', 'clients_init');
 
+function settings()
+{
+	// set up product labels
+	$labels = array(
+		'name' => 'Content Settings',
+		'singular_name' => 'Settings',
+		'add_new' => 'Add New Settings',
+		'add_new_item' => 'Add New Settings',
+		'edit_item' => 'Edit Settings',
+		'new_item' => 'New Settings',
+		'all_items' => 'All Settings',
+		'view_item' => 'View Settings',
+		'search_items' => 'Search Settings',
+		'not_found' =>  'No Settings Found',
+		'not_found_in_trash' => 'No Settings found in Trash',
+		'parent_item_colon' => '',
+		'menu_name' => 'Settings',
+	);
+
+	// register post type
+	register_post_type(
+		'settings',
+		array(
+			'labels' => $labels,
+			'public' => false,
+			'has_archive' => false,
+			'show_ui' => true,
+			'show_in_rest' => true,
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'rewrite' => array('slug' => 'settings'),
+			'query_var' => true,
+			'menu_icon' => 'dashicons-admin-settings',
+			'supports' => array(
+				'title',
+				'custom-fields'
+			)
+		)
+	);
+}
+add_action('init', 'settings');
+
 // ! Frequently Asked Questions Post Type
 // Clients Custom Post Type
 function faq_init()

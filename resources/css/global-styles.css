@@ -69,9 +69,10 @@ button {
 .link__404 {
 }
 
-/* body:not(.home) .container a {
-  text-decoration: underline !important;
-} */
+/* ! Cookie Popup */
+.cky-btn-revisit-wrapper {
+	bottom: 100px!important;
+}
 
 /* Disabled Cursor */
 .forbidden {
