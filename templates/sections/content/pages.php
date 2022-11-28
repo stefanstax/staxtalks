@@ -1,6 +1,9 @@
-<div class="w-full">
+<?php include(__DIR__ . '/../../../paletteSystem.php'); ?>
+
+<article class="w-full">
   <?php if (empty(get_the_content())) { ?>
-  <h2>We're currently working on the content for this page. Please check again in a couple of days.</h2>
+    <h2>We're currently working on the content for this page. Please check again in a couple of days.</h2>
   <?php } else {
-    the_content(); } ?>
-</div>
+    the_content();
+  } ?>
+</article>

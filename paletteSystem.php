@@ -34,9 +34,9 @@ $NavigationWidthLarge = "max-w-[15em]";
 $roundedFull = "rounded-md";
 
 // Content position depending on the Navigation
-$ContentNavDesktop = "ml-[20em]";
-$ContentNavTablet = "ml-[16.5em]";
-$ContentNavMobile = "mx-auto";
+$ContentNavLG = "ml-[16.5em]";
+$ContentNavXL = "ml-[27em]";
+$ContentNav2XL = "ml-[32em]";
 
 
 // Shadow colors

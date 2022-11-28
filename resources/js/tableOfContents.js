@@ -46,7 +46,7 @@
   // Populate table of contents container with all h2 there are on the page and make their href tied to exisiting id of the same heading;
   allHeadings.forEach((element) => {
     container.innerHTML +=
-      `<div class="tableOfContents__block"><iconify-icon icon="akar-icons:triangle-right"></iconify-icon> <a class="tableOfContents__link" href="#${element
+      `<div class="tableOfContents__block w-full"><a class="tableOfContents__link font-bold text-base" href="#${element
         .toLowerCase()
         .trim()
         .split(/\s+/)
@@ -62,7 +62,8 @@
     createdHeadings.forEach((createdHeading) => {
       createdHeading.addEventListener("click", function () {
         headings.forEach((heading) => {
-          if (heading.innerHTML === createdHeading.children[1].innerHTML) {
+          console.log(heading);
+          if (heading.innerHTML === createdHeading.children[0].innerHTML) {
             heading.innerHTML += `<iconify-icon width="18px" height="18px" icon="akar-icons:thumbs-up"></iconify-icon>`;
             createdHeading.classList.add("line-through");
             createdHeading.classList.add("opacity-20");

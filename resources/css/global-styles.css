@@ -11,7 +11,7 @@ body {
   margin: 0em;
 }
 
-body main * {
+body main *, body footer * {
   font-family: "Source Sans Pro", sans-serif !important;
   line-height: 150%;
 }

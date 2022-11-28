@@ -1,0 +1,1 @@
+<a class="w-full p-4 bg-[#131616] rounded-md text-base text-white font-black my-2" href="<?php block_field("document-link"); ?>"><?php block_field("document-name"); ?></a>

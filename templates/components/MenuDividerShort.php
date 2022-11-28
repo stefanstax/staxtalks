@@ -1,0 +1,1 @@
+<div class="w-3/12 min-w-[150px] rounded-md h-[2px] shadow-lg shadow-[<?php echo $BabyBlueShadow; ?>] bg-[#f9f9f9] my-4"></div>

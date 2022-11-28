@@ -140,7 +140,7 @@
 
 .tableOfContents .tableOfContents__link {
   text-decoration: none;
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 /* Table of contents | @media */
 
